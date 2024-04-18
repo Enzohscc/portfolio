@@ -1,0 +1,21 @@
+.container-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    padding: 30px;
+    background-color: var(--background-box);
+    border-radius: 10px;
+
+    ul {
+         background-color: var(--background-box);
+    }
+    
+    li {
+        list-style: none;
+        margin-bottom: 50px;
+        background-color: var(--background-box);
+        color: var(--branco);
+        cursor: pointer;
+    }
+}
