@@ -2,7 +2,49 @@
     background-color: var(--background-box);
 }
 
+
 .author-container {
     padding: 50px 50px 80px 50px;
     text-align: center;
+    border-radius: 10px;
+}
+
+
+.author-box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.author-info {
+
+
+    h3 {
+        font-size: 30px;
+        font-weight: 700;
+        color: var(--branco);
+    }
+
+    p {
+        font-weight: 500;
+        color: var(--verde-escuro);
+    }
+}
+
+.author-description {
+
+
+
+    p {
+        color: var(--verde-escuro);
+    }
+}
+
+.author-social-links {
+    
+
+    i {
+        color: var(--verde);
+        font-size: 25px;
+    }
 }

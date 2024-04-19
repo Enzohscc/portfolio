@@ -1,29 +1,88 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+@mixin base-btn {
+	height: 40px;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 19px;
+	padding: 10px;
+	text-align: center;
+	cursor: pointer;
+	font-family: 'Poppins', sans-serif;
+}
 
 :root {
-    --branco: #FFFFFE;
-    --cinza: #EFF0F3;
-    --laranja: #FF8E3C;
-    --rosa: #D9376E;
-    --preto: #0D0D0D;
-    --azul-escuro: #002367;
-    --background: #191C1C;
-    --background-box: #222525;
+  --branco: #f2fbf2;
+  --verde: #4abb4f;
+  --preto: #0d0d0d;
+  --verde-escuro: #286d2c;
+  --background: #191c1c;
+  --background-box: #222525;
 }
 
-html, body { 
-    height: 100%; 
+html,
+body {
+  height: 100%;
 }
 
-html, body, * { 
-    margin: 0; 
-    padding: 0; 
-    box-sizing: border-box; 
-    font-family: "Inter", sans-serif; 
-    font-optical-sizing: auto; 
-    font-weight: weight; 
-    font-style: normal; 
-    font-variation-settings: "slnt" 0;
-    background-color: var(--background);
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+  background-color: var(--background);
+}
+
+.hover-transition {
+  transition: color 200ms ease-in-out;
+  &:hover {
+    color: var(--verde) !important;
+  }
+}
+
+.hover-transition-button {
+    transition: background-color 700ms ease-in-out;
+    &:hover {
+      background-color: var(--verde);
+      color: var(--verde-escuro) !important;
+    }
+  }
+
+button[primary] {
+  @include base-btn;
+	background-color: var(--verde);
+	color: var(--branco);
+	border-radius: 5px;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+
+button[primary-outline] {
+	@include base-btn;
+	border-radius: 5px;
+	border: 1px solid var(--verde-escuro);
+	background-color: transparent;
+	color: var(--verde-escuro);
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+
+.centralize {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
