@@ -1,7 +1,7 @@
 section{
     width: 1200px;
     margin: auto;
-    padding: 10px;
+    padding: 20px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(4, 50px);
@@ -26,4 +26,9 @@ app-content-page{
 app-side-bar{
     grid-column: 7;
     grid-row: 1;
+}
+
+app-footer{
+    grid-column: 3 / span 4;
+    grid-row: 28;
 }
