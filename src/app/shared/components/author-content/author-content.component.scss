@@ -2,6 +2,13 @@
     background-color: var(--background-box);
 }
 
+.author-image {
+
+  img {
+    width: 300px;
+    border-radius: 10px;
+  }
+}
 
 .author-container {
     padding: 50px 50px 80px 50px;
@@ -25,6 +32,10 @@
         color: var(--branco);
     }
 
+    span {
+      color: var(--verde-escuro);
+    }
+
     p {
         font-weight: 500;
         color: var(--verde-escuro);
@@ -41,7 +52,7 @@
 }
 
 .author-social-links {
-    
+
 
     i {
         color: var(--verde);
