@@ -5,7 +5,7 @@ section{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(4, 50px);
-    gap: 15px;
+    gap: 35px;
 }
 
 app-header{
@@ -18,9 +18,9 @@ app-author-content{
     grid-row: 1;
 }
 
-app-content-page{
+.content-page {
     grid-column: 3 / span 4;
-    grid-row: 3;
+    grid-row: 2;
 }
 
 app-side-bar{
