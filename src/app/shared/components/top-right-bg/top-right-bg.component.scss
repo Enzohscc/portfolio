@@ -1,0 +1,26 @@
+.top-right-bg {
+    position: absolute;
+    right: 70px;
+    top: 20px;
+  }
+  
+.top-right-bg::before {
+    position: absolute;
+    height: 26px;
+    width: 26px;
+    border-radius: 5px;
+    content: "";
+    background: var(--verde);
+    z-index: 1;
+}
+
+.top-right-bg::after {
+    position: absolute;
+    height: 26px;
+    width: 26px;
+    border-radius: 5px;
+    content: "";
+    left: 10px;
+    top: 10px;
+    background: var(--branco)
+}

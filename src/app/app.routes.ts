@@ -23,6 +23,10 @@ export const routes: Routes = [
     loadComponent: async () => (await (import('./domain/pages/contact/contact.component'))).ContactComponent
   },
   {
+    path: 'education',
+    loadComponent: async () => (await (import('./domain/pages/education/education.component'))).EducationComponent
+  },
+  {
     path: '**',
     redirectTo: ''
   }
