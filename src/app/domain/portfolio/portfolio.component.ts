@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { TopRightBgComponent } from '../../../shared/components/top-right-bg/top-right-bg.component';
+import { TopRightBgComponent } from '../../shared/components/top-right-bg/top-right-bg.component';
 
 @Component({
   selector: 'app-portfolio',

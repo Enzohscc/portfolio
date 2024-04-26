@@ -2,6 +2,11 @@
     background-color: var(--background-box);
 }
 
+:host {
+    display: block;
+    margin-top: 10px;
+}
+
 footer {
     display: flex;
     padding: 25px;

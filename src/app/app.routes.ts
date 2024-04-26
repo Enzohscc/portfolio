@@ -1,26 +1,26 @@
-import { AboutComponent } from './domain/pages/about/about.component';
+import { AboutComponent } from './domain/about/about.component';
 import { Routes } from '@angular/router';
 
 export const routes: Routes = [
   {
     path: '',
-    loadComponent: async () => (await (import('./domain/pages/inicio/inicio.component'))).InicioComponent
+    loadComponent: async () => (await (import('./domain/inicio/inicio.component'))).InicioComponent
   },
   {
     path: 'about',
-    loadComponent: async () => (await (import('./domain/pages/about/about.component'))).AboutComponent
+    loadComponent: async () => (await (import('./domain/about/about.component'))).AboutComponent
   },
   {
     path: 'portfolio',
-    loadComponent: async () => (await (import('./domain/pages/portfolio/portfolio.component'))).PortfolioComponent
+    loadComponent: async () => (await (import('./domain/portfolio/portfolio.component'))).PortfolioComponent
   },
   {
     path: 'contact',
-    loadComponent: async () => (await (import('./domain/pages/contact/contact.component'))).ContactComponent
+    loadComponent: async () => (await (import('./domain/contact/contact.component'))).ContactComponent
   },
   {
     path: 'education',
-    loadComponent: async () => (await (import('./domain/pages/education/education.component'))).EducationComponent
+    loadComponent: async () => (await (import('./domain/education/education.component'))).EducationComponent
   },
   {
     path: '**',
