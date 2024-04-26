@@ -2,16 +2,12 @@
     background-color: var(--background-box);
 }
 
-.about-brief, .rating {
+.about-brief {
   margin-top: 30px;
   display: flex;
   gap: 30px;
   align-items: center;
 
-  h4 {
-    color: var(--branco);
-    font-size: 25px;
-  }
 
   p {
     color: var(--cinza);
@@ -42,4 +38,24 @@
   p {
     color: var(--cinza);
   }
+}
+
+.container {
+    height: 200px;
+    position: relative;
+}
+
+.vertical-line {
+    border-left: 1px solid var(--verde);
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+.horizontal-line {
+    width: 100%; 
+    margin-bottom: 10px;
+    border-top: 1px solid var(--verde);
 }

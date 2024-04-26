@@ -15,10 +15,6 @@ export const routes: Routes = [
     loadComponent: async () => (await (import('./domain/pages/portfolio/portfolio.component'))).PortfolioComponent
   },
   {
-    path: 'resume',
-    loadComponent: async () => (await (import('./domain/pages/resume/resume.component'))).ResumeComponent
-  },
-  {
     path: 'contact',
     loadComponent: async () => (await (import('./domain/pages/contact/contact.component'))).ContactComponent
   },

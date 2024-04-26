@@ -1,0 +1,87 @@
+* {
+    background-color: var(--background-box);
+}
+
+
+
+
+.single-education {
+
+    h3 {
+        color: var(--cinza);
+    }
+}
+
+
+.info-left-side {
+    margin-left: 20px;
+
+    h6 {
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        color: var(--branco);
+    }
+
+    p {
+        color: var(--cinza);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+    height: 200px;
+    position: relative;
+}
+
+.vertical-line {
+    border-left: 1px solid var(--cinza);
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+.left-side,.right-side {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    left: -5px;
+    top: 20px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: var(--verde);
+    z-index: 1;
+}
+
+.container::after {
+    content: "";
+    position: absolute;
+    right: -5px; /* Ajuste a posição conforme necessário */
+    top: 110px; /* Ajuste a posição conforme necessário */
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: var(--verde); /* Cor do segundo pseudo-elemento */
+    z-index: 1;
+}
+
+
