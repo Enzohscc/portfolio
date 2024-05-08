@@ -1,0 +1,36 @@
+@mixin base-btn {
+	height: 40px;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 19px;
+	padding: 10px;
+	text-align: center;
+	cursor: pointer;
+	font-family: 'Poppins', sans-serif;
+}
+
+button[primary] {
+    @include base-btn;
+    background-color: var(--verde);
+    color: var(--branco);
+    border-radius: 5px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+  
+button[primary-outline] {
+    @include base-btn;
+    border-radius: 5px;
+    border: 1px solid var(--verde-escuro);
+    background-color: transparent;
+    color: var(--verde-escuro);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}

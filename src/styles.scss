@@ -1,123 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import 'font';
+@import 'variables';
+@import 'buttons';
+@import 'transitions';
+@import 'div';
 
-@mixin base-btn {
-	height: 40px;
-	border-radius: 5px;
-	border: none;
-	outline: none;
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 19px;
-	padding: 10px;
-	text-align: center;
-	cursor: pointer;
-	font-family: 'Poppins', sans-serif;
-}
-
-:root {
-  --branco: #f2fbf2;
-  --verde: #4abb4f;
-  --preto: #0d0d0d;
-  --verde-escuro: #286d2c;
-  --background: #191c1c;
-  --background-box: #222525;
-  --cinza: #8B9F9F
-}
-
-html,
-body {
-  height: 100%;
-}
-
-html,
-body,
-* {
+html, body, * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
-  font-variation-settings: "slnt" 0;
   background-color: var(--background);
-}
-
-.hover-transition {
-  transition: color 200ms ease-in-out;
-  &:hover {
-    color: var(--verde) !important;
-  }
-}
-
-.hover-transition-button {
-    transition: background-color 700ms ease-in-out;
-    &:hover {
-      background-color: var(--verde);
-      color: var(--verde-escuro) !important;
-    }
-  }
-
-button[primary] {
-  @include base-btn;
-	background-color: var(--verde);
-	color: var(--branco);
-	border-radius: 5px;
-	font-size: 12px;
-	font-style: normal;
-	font-weight: 600;
-	line-height: normal;
-}
-
-button[primary-outline] {
-	@include base-btn;
-	border-radius: 5px;
-	border: 1px solid var(--verde-escuro);
-	background-color: transparent;
-	color: var(--verde-escuro);
-	font-size: 12px;
-	font-style: normal;
-	font-weight: 600;
-	line-height: normal;
-}
-
-.centralize {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
-.section {
-  position: relative;
-  padding: 115px 110px 105px 105px;
-  max-width: 100%;
-  border-radius: 10px;
-}
-
-.icon {
-  p {
-      color: var(--cinza);
-  }
-
-  i {
-      color: var(--verde-escuro);
-  }
-}
-
-.box-text {
-
-  h1 {
-    color: var(--branco);
-    line-height: 1.2;
-    font-size: 40px;
-    font-weight: 500;
-    max-width: 800px;
-    text-transform: capitalize;
-    margin-bottom: 35px
-  }
-
-  span {
-    color: var(--verde-escuro);
-  }
 }

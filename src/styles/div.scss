@@ -1,0 +1,38 @@
+.centralize {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+  
+.section {
+    position: relative;
+    padding: 115px 110px 105px 105px;
+    max-width: 100%;
+    border-radius: 10px;
+}
+  
+.icon {
+    p {
+        color: var(--cinza);
+    }
+
+    i {
+        color: var(--verde-escuro);
+    }
+}
+  
+.box-text {
+    h1 {
+        color: var(--branco);
+        line-height: 1.2;
+        font-size: 40px;
+        font-weight: 500;
+        max-width: 800px;
+        text-transform: capitalize;
+        margin-bottom: 35px
+    }
+
+    span {
+        color: var(--verde-escuro);
+    }
+}

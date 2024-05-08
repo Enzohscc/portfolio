@@ -1,0 +1,14 @@
+.hover-transition {
+    transition: color 200ms ease-in-out;
+    &:hover {
+      color: var(--verde) !important;
+    }
+}
+  
+.hover-transition-button {
+    transition: background-color 700ms ease-in-out;
+    &:hover {
+    background-color: var(--verde);
+    color: var(--verde-escuro) !important;
+    }
+}

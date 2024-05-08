@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { TopRightBgComponent } from '../../shared/components/top-right-bg/top-right-bg.component';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [],
+  imports: [TopRightBgComponent],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
