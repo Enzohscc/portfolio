@@ -13,14 +13,10 @@
     font-size: 25px;
 }
 
-p {
+.item-bottom p {
     color: var(--cinza);
     max-width: 80px;
     text-transform: capitalize;
-}
-
-p:last-child {
-    margin-bottom: 0;
 }
 
 .contact-method {
@@ -35,22 +31,23 @@ p:last-child {
     padding: 30px 30px;
     border-radius: 10px;
     border: 1px solid var(--cinza);
+    transition: 0.5s;
 }
 
-.items{
+.single-contact-item:hover {
+    border-color: var(--verde-escuro);
+}
+
+.items {
     margin-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-a {
+.contact-item-bottom a {
     display: block;
     font-size: 20px;
     font-weight: 700;
     color: var(--branco);
 }
-
-
-
-

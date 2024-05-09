@@ -2,10 +2,20 @@
     background-color: var(--background-box);
 }
 
+.row-education {
+    display: flex;
+    gap: 150px;
 
-
+    h6 {
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        color: var(--branco);
+    }
+}
 
 .single-education {
+    margin-top: 30px;
 
     h3 {
         color: var(--cinza);
@@ -29,6 +39,16 @@
 
 .container {
     height: 200px;
+    position: relative;
+}
+
+.container-side-line {
+    height: 100px;
+    position: relative;
+}
+
+.container-side-line-two {
+    height: 230px;
     position: relative;
 }
 
@@ -61,13 +81,26 @@
 .container::after {
     content: "";
     position: absolute;
-    right: -5px; /* Ajuste a posição conforme necessário */
-    top: 110px; /* Ajuste a posição conforme necessário */
+    right: -5px;
+    top: 220px;
     height: 10px;
     width: 10px;
     border-radius: 50%;
-    background: var(--verde); /* Cor do segundo pseudo-elemento */
+    background: var(--verde);
     z-index: 1;
 }
 
+.right-side {
+    max-width: 510px;
 
+    h6 {
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    p {
+        margin-bottom: 15px;
+        color: var(--cinza);
+    }
+}
