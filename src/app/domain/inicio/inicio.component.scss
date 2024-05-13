@@ -24,3 +24,38 @@
     width: 550px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .box-img img {
+    max-width: 115%;
+  }
+
+  .box-text {
+    padding: 0 20px;
+  }
+
+  h1 {
+    font-size: 20px;
+    margin-left: -20px;
+  }
+
+  a{
+    font-size: 20px;
+  }
+
+  .contact-zone {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-zone a {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .box-img img {
+    max-width: 115%;
+  }
+  
+}

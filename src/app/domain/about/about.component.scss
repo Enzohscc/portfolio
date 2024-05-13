@@ -59,3 +59,36 @@
     margin-bottom: 10px;
     border-top: 1px solid var(--verde);
 }
+
+@media screen and (max-width: 768px) {
+  .about-brief {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .about-info {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .container {
+      display: none;
+  }
+}
+
+/* Media queries para celulares */
+@media screen and (max-width: 480px) {
+  .about-brief {
+      gap: 10px;
+  }
+
+  .about-info {
+      gap: 10px;
+  }
+
+  .about-info-box {
+      padding: 8px;
+  }
+}

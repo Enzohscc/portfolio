@@ -48,7 +48,7 @@
 }
 
 .container-side-line-two {
-    height: 230px;
+    height: 80px;
     position: relative;
 }
 
@@ -102,5 +102,77 @@
     p {
         margin-bottom: 15px;
         color: var(--cinza);
+    }
+}
+
+.single-info-item {
+    
+    .skills-container{
+        display: flex;
+        gap: 30px  
+    }
+    
+    
+    .single-skill-item {
+        width: 50%;
+    }
+    
+    .expertise-single {
+        font-weight: 700;
+        font-family: var(--branco);
+        color: var(--branco);
+        text-transform: capitalize;
+    }
+    
+    .expertise-single:not(:last-child) {
+        margin-bottom: 25px;
+    }
+    
+    .progress {
+        position: relative;
+        border-radius: 0;
+    }
+    
+    .progress::before {
+        position: absolute;
+        content: "";
+        height: 20px;
+        width: 100%;
+        background: var(--background);
+    }
+    
+    .progress-bar {
+        height: 5px;
+        border-radius: 0;
+        background: var(--verde);
+        z-index: 9;
+        position: relative;
+        width: 0;
+        transition: width 1s ease-in-out;
+    }
+
+
+    h3 {
+        font-size: 32px;
+        margin-top: 30px;
+        font-weight: 400;
+        color: var(--cinza);
+        margin-bottom: 40px;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .icon p,
+    .box-text h1 {
+        font-size: 24px;
+    }
+}
+
+/* Media queries para celulares */
+@media screen and (max-width: 480px) {
+    .icon p,
+    .box-text h1 {
+        font-size: 20px;
     }
 }
