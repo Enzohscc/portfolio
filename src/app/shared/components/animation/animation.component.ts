@@ -4,6 +4,14 @@ import { Component } from '@angular/core';
 import { Router, RoutesRecognized } from '@angular/router';
 import { Subject, filter, pairwise, timer } from 'rxjs';
 
+// const names: { [key: string]: string} = {
+//   '': 'Inicio',
+//   about: 'Sobre'
+//   portfolio: 'Sobre'
+//   about: 'Sobre'
+//   about: 'Sobre'
+// }
+
 @Component({
   selector: 'app-animation',
   standalone: true,

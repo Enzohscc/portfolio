@@ -169,10 +169,67 @@
     }
 }
 
-/* Media queries para celulares */
 @media screen and (max-width: 480px) {
     .icon p,
     .box-text h1 {
         font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .row-education {
+        display: block;
+        gap: 20px;
+    }
+
+    .right-side {
+        max-width: none;
+    }
+}
+
+/* Ajustes para monitores menores */
+@media screen and (max-width: 480px) {
+    .icon p,
+    .box-text h1 {
+        font-size: 20px;
+    }
+
+    .row-education {
+        gap: 15px;
+    }
+
+    .info-right-side {
+        position: relative;
+        left: 20px;
+    }
+
+    #responsive-0 {
+        position: relative;
+        top: -110px;
+        left: 20px;
+    }
+
+    #responsive-1 {
+        position: relative;
+        top: -80px;
+    }
+
+    #responsive-2 {
+        position: relative;
+        top: -80px;
+    }
+
+    #responsive-3 {
+        position: relative;
+        top: -60px;
+    }
+
+    .vertical-line {
+        border-left: 1px solid var(--cinza);
+        height: 140%;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
     }
 }
