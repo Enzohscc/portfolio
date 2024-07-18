@@ -3,7 +3,7 @@
     right: 100px;
     top: 20px;
   }
-  
+
 .top-right-bg::before {
     position: absolute;
     height: 26px;
@@ -12,6 +12,7 @@
     content: "";
     background: var(--verde);
     z-index: 1;
+    left: -20px;
 }
 
 .top-right-bg::after {
@@ -20,7 +21,7 @@
     width: 26px;
     border-radius: 5px;
     content: "";
-    left: 10px;
+    left: -5px;
     top: 10px;
     background: var(--branco)
 }
